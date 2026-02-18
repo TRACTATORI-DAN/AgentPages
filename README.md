@@ -2,15 +2,6 @@
 
 AgentPages is a **safe-by-construction** renderer for AI-generated pages. An LLM can output a constrained JSON “page spec”, and AgentPages renders it into DOM **without ever injecting untrusted HTML**.
 
-## Why this exists (Interact AI)
-
-Interact AI needs an in-session way to answer “there isn’t a page/video for this” by generating a page **live**. Raw HTML/CSS/JS injection turns into an XSS factory. AgentPages solves this by:
-- allowing **only known component types** with **validated schema**
-- rendering all user/LLM strings via `textContent` (no `innerHTML` for user content)
-- URL protocol allowlisting (http/https/mailto/tel)
-- action sandboxing via `actionPolicy` + `allowedActions`
-- optional CSP nonce + Trusted Types support for strict environments
-
 ## Install (browser)
 
 Copy `agentpages.js` (or `AgentPages.js`) into your repo and load it:
