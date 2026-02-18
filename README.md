@@ -167,7 +167,7 @@ AgentPages is **safe by construction**, not by sanitization:
 
 | | AgentPages | Google A2UI | Raw HTML Gen | Templates |
 |---|---|---|---|---|
-| Expressiveness | High (17 components + custom) | Medium (catalog-based) | Unlimited | Low |
+| Expressiveness | High (22+ components + custom) | Medium (catalog-based) | Unlimited | Low |
 | Security | Safe by construction | Safe by catalog | Dangerous | Safe |
 | Dependencies | Zero | Framework renderer required | None | Varies |
 | Streaming | Built-in | Built-in | Manual | N/A |
