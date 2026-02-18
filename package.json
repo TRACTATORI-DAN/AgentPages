@@ -1,0 +1,45 @@
+{
+  "name": "agentpages",
+  "version": "0.5.1",
+  "description": "Safe-by-construction renderer for AI-generated pages (JSON -> DOM).",
+  "license": "MIT",
+  "main": "dist/agentpages.umd.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "AgentPages.js",
+    "agentpages.js"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/agentpages.umd.js",
+      "default": "./dist/agentpages.umd.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TRACTATORI-DAN/AgentPages.git"
+  },
+  "scripts": {
+    "test": "node --test",
+    "minify": "terser dist/agentpages.umd.js -c -m -o dist/agentpages.umd.min.js"
+  },
+  "devDependencies": {
+    "jsdom": "^24.0.0",
+    "terser": "^5.31.0"
+  },
+  "keywords": [
+    "llm",
+    "agent",
+    "xss",
+    "safe-dom",
+    "json-schema",
+    "frontend",
+    "rendering"
+  ],
+  "author": ""
+}
