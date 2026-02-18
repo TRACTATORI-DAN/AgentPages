@@ -1,4 +1,4 @@
-# AgentPages v0.5.1
+# AgentPages 
 
 AgentPages is a **safe-by-construction** renderer for AI-generated pages. An LLM can output a constrained JSON “page spec”, and AgentPages renders it into DOM **without ever injecting untrusted HTML**.
 
